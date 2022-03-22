@@ -29,7 +29,6 @@ def get_parents(operator: str, parents: list) -> Any:
 				current_value.append(0)
 				node_value = json.dumps(current_value)
 				parents[parent].node_value = node_value
-
 		for i in parents:
 			i.operator_child = operator
 			i.save()

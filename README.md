@@ -26,3 +26,14 @@ $ sudo apt install pipenv
 
 <br /> The list of all nodes is located at /api/
 <br />  The documentation is located at /redoc/ or /swagger/
+### Example  of creating a graph
+
+* Move to url ```api/create/vector```
+* Create fist vector: In the input form, specify the value of the vector in comma-separated digits (for example, 1,1,1)
+*  Create second vecor: In the input form, specify the value of the vector in comma-separated digits (for example, 1,1,1)
+* Move to url ```api/create/operator```
+* Select the operator value from the list
+* Viewing the graph structure is implemented by the url ```/api/```
+* To update the vector value, go to the url ```update/vector/<int:pk>/``` where pk is the id of the vector
+*To update the operator value, go to the url ```update/operator/<int:pk>/``` where pk is the operator id
+* Deleting specific vectors and operators is carried out by the corresponding urls: ```delete/vector/<int:pk>/``` and ```delete/operator/<int:pk>/```, where pk is the id of the graph element
